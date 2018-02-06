@@ -1,0 +1,12 @@
+@import 'variables';
+
+
+$theme-font: verdana, sans-serif;
+
+body {
+  font: $theme-font;
+  background-color: $colorRed;
+  h1, h2 {
+      color: #000000;
+  }
+}
