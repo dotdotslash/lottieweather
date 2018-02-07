@@ -1,20 +1,20 @@
 import React from 'react';
-import Moment from 'react-moment';
-import _ from 'lodash';
+import ReactBodymovin from 'react-bodymovin';
+import animation from '../animations/cloud_sync.json';
 
-
-function convertTime(data) {
-	
-}
-/*		<div>{convertTime(props.data)} ({props.units})</div> */
 
 export default (props) => {	
 		
-   const unixTimestamp = props.data[0];
+    const bodymovinOptions = {
+       loop: true,
+       autoplay: true,
+       prerender: true,
+       animationData: animation
+     }
    	
 	return (
 		<div>
-            <Moment unix format="ddd MM/DD hh:mm a">{unixTimestamp}</Moment>
-		</div>
+      		<ReactBodymovin options={bodymovinOptions} />
+    	</div>
 	);
 }

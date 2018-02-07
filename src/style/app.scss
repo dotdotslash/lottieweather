@@ -1,12 +1,45 @@
 @import 'variables';
 
 
-$theme-font: verdana, sans-serif;
-
+html, body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
 body {
-  font: $theme-font;
-  background-color: $colorRed;
-  h1, h2 {
-      color: #000000;
-  }
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: linear-gradient(rgb(254,255,255) ,rgb(160,216,239) );
+	font-family: 'Raleway', sans-serif;
+
+
+	h1, h2 {
+	  color: #000000;
+	}
+}
+
+.ten-columns > .col {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.input-group .form-control {
+	border-radius: 0;
+}
+
+.input-group-btn:not(:first-child)>.btn {
+	border-radius: 0;
+}
+
+@media (max-width: 768px) { 
+	.ten-columns > .col {
+	    -webkit-box-flex: 0;
+	    -webkit-flex: 0 0 100%;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
 }
