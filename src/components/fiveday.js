@@ -14,7 +14,6 @@ function toCelsius(temp) {
 
 
 export default (props) => {
-	console.log(props);
 
 	const listItems = props.data.map(function(forcast, i) {
 	    if (i % 8 === 0) {
@@ -22,11 +21,11 @@ export default (props) => {
 				<div key={i} className="weather-day col col-sm-2">
 					<Animation weather={forcast.weather[0].main} />
 				
-					<h3 className="">
+					<h3 className="day">
 						<Moment unix format="ddd ">{forcast.dt}</Moment>
 					</h3>
-			  		<div className="" key={forcast.dt}>{forcast.weather[0].main}</div>
-					<div className="">
+			  		<div className="weather-type" key={forcast.dt}>{forcast.weather[0].main}</div>
+					<div className="temps">
 						{toFahrenheit(forcast.main.temp)}&#176;F <span>{toCelsius(forcast.main.temp)}&#176;C</span>
 					</div>
 				</div>

@@ -7,7 +7,8 @@ import normalize from 'normalize.css';
 export default class App extends Component {
   render() {
     return (		
-		<div className="stuff">
+		<div className="app">
+			<h1>So what’s the weather like?</h1>
     		<SearchBar />
 			<WeatherList />
 		</div>

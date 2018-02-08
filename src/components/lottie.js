@@ -9,8 +9,7 @@ import * as cloudAni from '../animations/cloud.json';
 
 
 export default (props) => {	
-	console.log(props);
-		
+			
     const animationSettings = {
 			loop: true,
 			autoplay: true, 

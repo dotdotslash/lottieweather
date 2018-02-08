@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import FiveDay from '../components/fiveday';
-//import Forcast from '../components/forcast';
 
 
 class WeatherList extends Component {
@@ -13,7 +12,7 @@ class WeatherList extends Component {
 				
 		return (
 			<div key={cityData.city.name} className="city">
-				<h1>{cityData.city.name}</h1>
+				<h2>{cityData.city.name}</h2>
 				<FiveDay data={weather} />
 			</div>
 		);
