@@ -27,7 +27,7 @@ export default (props) => {
 					</h3>
 			  		<div className="" key={forcast.dt}>{forcast.weather[0].main}</div>
 					<div className="">
-						{toFahrenheit(forcast.main.temp)}&#176;F 						<span>{toCelsius(forcast.main.temp)}&#176;C</span>
+						{toFahrenheit(forcast.main.temp)}&#176;F <span>{toCelsius(forcast.main.temp)}&#176;C</span>
 					</div>
 				</div>
 			);

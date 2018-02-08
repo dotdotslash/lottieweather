@@ -1,10 +1,10 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import * as sunAni from '../animations/sun_burst_weather_icon.json';
-import * as clearAni from '../animations/infinite_rainbow.json';
-import * as rainAni from '../animations/wifi_wiper.json';
-import * as snowAni from '../animations/square_drop_loader.json';
-import * as cloudAni from '../animations/cloud_sync.json';
+import * as sunAni from '../animations/sun.json';
+import * as clearAni from '../animations/sun.json';
+import * as rainAni from '../animations/rain.json';
+import * as snowAni from '../animations/snow.json';
+import * as cloudAni from '../animations/cloud.json';
 
 
 
