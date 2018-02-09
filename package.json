@@ -1,0 +1,54 @@
+{
+  "name": "lottieweather",
+  "version": "1.0.0",
+  "description": "React weather app with animation",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotdotslash/lottieweather.git"
+  },
+  "author": "Colin White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotdotslash/lottieweather/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "node-sass": "^4.7.2",
+    "prop-types": "^15.6.0",
+    "react-addons-test-utils": "^0.14.8",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^3.10.1",
+    "moment": "^2.20.1",
+    "normalize.css": "^7.0.0",
+    "react": "^15.3.0",
+    "react-bodymovin": "^1.1.1",
+    "react-dom": "^15.3.0",
+    "react-lottie": "^1.0.0",
+    "react-moment": "^0.7.0",
+    "react-redux": "4.3.0",
+    "react-router": "^2.0.1",
+    "redux": "^3.0.4",
+    "redux-promise": "^0.5.3"
+  }
+}
