@@ -9,13 +9,17 @@ class WeatherList extends Component {
 		const temps = cityData.list.map(weather => weather.main.temp);
 		const {lon,lat} = cityData.city.coord;
 		const  weather = cityData.list.map(forcast => forcast);
-				
-		return (
-			<div key={cityData.city.name} className="city">
-				<h2>{cityData.city.name}</h2>
-				<FiveDay data={weather} />
-			</div>
-		);
+		
+		if(cityData) {
+			return (
+				<div key={cityData.city.name} className="city">
+					<h2>{cityData.city.name}</h2>
+					<FiveDay data={weather} />
+				</div>
+			);
+		} else {
+			console.log('erroe');
+		}
 	}
 	
 	

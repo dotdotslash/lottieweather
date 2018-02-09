@@ -37,7 +37,7 @@ export default (props) => {
 	}
    	
 	return (
-		<div>
+		<div className="forecast-art">
 	    	<Lottie options={animationSettings} />
     	</div>
 	);
